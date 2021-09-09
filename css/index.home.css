@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: url('/img/home-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    background: rgba(0,0,0,0.3);
+    height: 100vh;
+}
+.navbar .navbar-side .container{
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 12px; */
+}
+
+.navbar-side .left-col{
+    font-size: 41px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-transform: uppercase; 
+    margin-top: 8px;
+}
+.navbar-side .left-col a{
+    color: #fff;
+    text-decoration: none;
+}
+.navbar-side .left-col p{
+    font-size: 12px;
+    line-height: 1.1;
+    font-weight: 500;
+    color: #fff;
+}
+.navbar .navbar-side .container .mid-col{
+    display: flex;
+    margin-left: 50px;
+}
+.navbar .navbar-side .container .mid-col-side{
+    display: flex;
+    margin: 0 23px;
+}
+.navbar .navbar-side .container .mid-col i{
+    font-size: 40px;
+    line-height: 2;
+    color: #fff;
+}
+.navbar .navbar-side .container .mid-col .text{
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    margin: 12px;
+    color: #fff;
+}
+.navbar .navbar-side .container .right-col ul{
+    display: flex;
+    margin-top: 19px;
+}
+.navbar .navbar-side .container .right-col ul a{
+    color: #fff;
+    height: 44px;
+    width: 44px;
+    text-decoration: none;
+    font-size: 24px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .navbar-side .container .right-col ul {
+    list-style-type: none;
+}
+.navbar .navbar-side .container .right-col ul a::marker {
+    background: none;
+}
+
+.main-navbar {
+    background: #6c757d2e;
+    height: 56px;
+}
+.main-navbar .max-width{
+    height: 56px;
+}
+.main-navbar .menu ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.main-navbar .menu ul a{
+    font-size: 21px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    padding:12px;
+    color: #fff;
+    display: block;
+}
+
+.main-navbar .menu ul{
+    position: relative;
+}
+
+.main-navbar .menu ul li{
+    position: relative;
+}
+.main-navbar .menu ul ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    background: #6c757d2e;
+}
+.main-navbar .menu ul ul li{
+    width: 280px;
+    float: none;
+}
+.main-navbar .menu ul ul li a{
+    font-size: 19px;
+    padding: 3px 10px;
+}
+.main-navbar .menu ul li:hover > ul{
+    display: block;
+}
+.main-navbar .menu-bars-navbar{
+    display: none;
+}
+
+/* css for navbar sticky */
+.main-navbar.active{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background: rgba(34,34,34,0.8);
+    top: 0px;
+    width: 100%;
+    height: 56px;
+    padding-right: 78px;
+}
+.main-navbar.active .menu ul ul{
+    background: rgba(34,34,34,0.8);
+}
+.navbar-side .left-col.active{
+    font-size: 40px;
+    position: fixed;
+    z-index: 4;
+    float: left;
+    left: 110px;
+    top: -8px;
+    line-height: 1;
+}
+.mid-col.active {
+    visibility: hidden;
+}
+.right-col.active {
+    visibility: hidden;
+}
+
+.newnav{
+    display: none;
+}
+
+/* ------ */
+.mydiv{
+    width: 100%;
+    height: 100vh;
+    background: rgb(238, 141, 124);
+}
